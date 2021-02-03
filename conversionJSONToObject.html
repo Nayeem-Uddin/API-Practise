@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h3>JavaScript Object Notation</h3>
+    <script>
+        const person = {
+            name:'sadia',
+            age:23,
+            lover:{
+                name:'nayeem',
+                age:24.5
+            },
+            favFoodLover:['vat','aluvorta']
+        }
+        const personJSON = JSON.stringify(person);
+        console.log(personJSON); //object to JSON format
+
+        const personJSONString = JSON.parse(personJSON);
+        console.log(personJSONString); //JSON format to string conversion
+    </script>
+</body>
+</html>
